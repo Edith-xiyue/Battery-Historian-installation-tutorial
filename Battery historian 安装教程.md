@@ -90,7 +90,7 @@ C.最后配置一下环境变量，把Go的bin目录放到path环境变量中
 
 # 正式安装
 
-在正式开始安装前，最好配备一个VPN，因为下面所有的下载都需要上github，众周之的原因，或者使用`go env -w GOPROXY=https://goproxy.cn,direct`命令改成国内下载源。如果只想使用battery historian，且不需要随时迭代的话，可以直接前往笔者的[github](https://github.com/Edith-xiyue/Battery-Historian-installation-tutorial)下载，将其中的`src`文件夹放入“GOPATH”文件夹下。这个文件夹中是已经全编译的环境，可以直接进入`src/github.com/google/battery-historian/third_party`中使用`go run cmd/battery-historian/battery-historian.go`运行battery historian。
+在正式开始安装前，最好配备一个VPN，因为下面所有的下载都需要上github，众周之的原因，或者使用`go env -w GOPROXY=https://goproxy.cn,direct`命令改成国内下载源。如果只想使用battery historian，且不需要随时迭代的话，可以直接前往笔者的[github](https://github.com/Edith-xiyue/Battery-Historian-installation-tutorial)下载，将其中的`src`文件夹放入“GOPATH”文件夹下。这个文件夹中是已经全编译的环境，可以直接进入`src/github.com/google/battery-historian/`中使用`go run cmd/battery-historian/battery-historian.go`运行battery historian。
 
 1.使用`go env`查看环境，如果GO111MODULE不为"off"，则使用`go env -w GO111MODULE=off`更改为GO111MODULE="off"，如果没有GO111MODULE变量，则表明go版本较低，是用`go version`查看版本，只要1.10以上就可以不用关注，如果版本过低，可以参考[《Ubuntu安装go/升级go版本【转载】》](https://zhuanlan.zhihu.com/p/453462046)进行版本升级；
 
